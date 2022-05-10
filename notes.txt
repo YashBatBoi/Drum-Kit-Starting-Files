@@ -1,0 +1,6 @@
+
+document.querySelectorAll(".drum")[i] --> This will select the particular button.
+.addEventListener("click", function () {alert("I got clicked");});  --> This "addEventListener" will listen to the event that we have given to that button like we have given a click, so whenever we click to that particular button it will run the function that we have given to it.
+
+var drumAudio = new Audio("sounds/tom-1.mp3");
+drumAudio.play();
