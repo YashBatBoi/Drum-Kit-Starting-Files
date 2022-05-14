@@ -3,7 +3,7 @@ var numOfButtons = document.querySelectorAll(".drum").length;
 // console.log(numOfButtons);  // 7
 
 for (var i = 0; i < numOfButtons; i++) {
-  document.querySelectorAll(".drum")[i].addEventListener("click", function () {
+  $(".drum")[i].addEventListener("click", function () {
 
     var btnInnerHTML = this.innerHTML;
 
@@ -14,7 +14,7 @@ for (var i = 0; i < numOfButtons; i++) {
 }
 
 // Detecting Key Press
-document.addEventListener("keypress", function (event) {
+$(document).on("keypress", function (event) {
   
   makeSound(event.key);
   buttonAnimation(event.key);
